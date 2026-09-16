@@ -1,0 +1,16 @@
+node_modules/
+.bun-tmp/
+package-lock.json
+.mongodb/
+dist/
+build/
+.venv/
+__pycache__/
+*.py[cod]
+.env
+.env.local
+*.log
+.DS_Store
+
+CLAUDE.md
+.claude/

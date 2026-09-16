@@ -1,0 +1,9 @@
+.prettierrc export-ignore
+.prettierignore export-ignore
+.editorconfig export-ignore
+
+*.sh text eol=lf
+
+GUIDELINES.md export-ignore
+skills export-ignore
+skills/** export-ignore

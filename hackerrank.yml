@@ -1,0 +1,14 @@
+version: 1.0
+configuration:
+  has_webserver: true
+  readonly_paths:
+    - backend/scripts/**
+    - backend/calendar_backend/settings.py
+    - frontend/vite.config.js
+  ide_config:
+    default_open_files:
+      - backend/calendar_backend/urls.py
+      - frontend/src/App.jsx
+    project_menu:
+      run: bun start
+      install: bun install && bash setup.sh --seed

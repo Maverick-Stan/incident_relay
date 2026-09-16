@@ -1,0 +1,15 @@
+.relay-event-modal { width: min(760px, calc(100vw - 32px)); max-height: calc(100vh - 48px); overflow: auto; margin: auto; border: 1px solid #cad5df; border-radius: 14px; padding: 28px; color: #18283b; background: white; }
+.relay-event-modal::backdrop { background: #142638a6; }
+.relay-event-modal > .service-section-heading { margin-top: 0; }
+.relay-event-modal > p { color: #52677a; }
+.event-result { margin-top: 22px; margin-bottom: 16px; }
+.event-history { margin-bottom: 20px; }
+.event-record { border-top: 1px solid #dce4eb; padding: 10px 0 24px; overflow-wrap: anywhere; }
+.event-record .service-section-heading { margin-top: 12px; }
+.event-record small { display: block; margin-bottom: 14px; }
+.event-record details { padding: 12px; background: #f5f7fa; border-radius: 7px; }
+.event-record summary { cursor: pointer; font-size: 13px; }
+.event-record pre { max-height: 280px; overflow: auto; font-size: 12px; white-space: pre-wrap; overflow-wrap: anywhere; }
+.event-disposition { font-size: 12px; }
+.relay-workspace a:not(.relay-brand) { color: #086c62; font-weight: 500; }
+@media (max-width: 600px) { .relay-event-modal { padding: 20px; } }

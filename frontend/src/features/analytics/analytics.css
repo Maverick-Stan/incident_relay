@@ -1,0 +1,36 @@
+.analytics-metric-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.analytics-metric { border: 1px solid #e3e9ef; border-radius: 10px; padding: 22px; background: #f8fafc; }
+.analytics-metric-abbr { font-size: 12px; letter-spacing: .08em; font-weight: 500; color: #087465; }
+.analytics-metric-value { font-size: 40px; font-weight: 500; letter-spacing: -.02em; margin: 6px 0 2px; }
+.analytics-metric-name { font-size: 15px; font-weight: 500; color: #243d51; }
+.analytics-metric-helper { margin: 8px 0 14px; font-size: 13px; color: #5b6f82; }
+.analytics-metric-sample { font-size: 13px; color: #62758a; border-top: 1px solid #e5ebf0; padding-top: 12px; }
+
+.analytics-tiles { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+.analytics-tile { border: 1px solid #e3e9ef; border-radius: 10px; padding: 18px; text-align: center; }
+.analytics-tile-value { font-size: 30px; font-weight: 500; }
+.analytics-tile-label { font-size: 14px; font-weight: 500; color: #243d51; margin-top: 2px; }
+.analytics-tile small { display: block; margin-top: 6px; }
+
+.analytics-volume { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 26px; }
+.analytics-volume h3 { margin-bottom: 14px; }
+.analytics-note { font-size: 12px; margin: -6px 0 12px; }
+.analytics-bars { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 14px; }
+.analytics-bar-head { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; font-size: 14px; margin-bottom: 6px; }
+.analytics-bar-head > span:first-child { color: #33475b; overflow-wrap: anywhere; }
+.analytics-bar-count { font-weight: 500; color: #243d51; }
+.analytics-bar-track { background: #edf1f5; border-radius: 5px; height: 10px; overflow: hidden; }
+.analytics-bar-fill { height: 100%; background: #087f70; border-radius: 5px; min-width: 2px; }
+.analytics-bar-fill.low { background: #256c56; }
+.analytics-bar-fill.medium { background: #3d57a1; }
+.analytics-bar-fill.high { background: #b8791d; }
+.analytics-bar-fill.critical { background: #a52732; }
+.analytics-rule { font-size: 13px; border-top: 1px solid #e5ebf0; padding-top: 16px; }
+
+@media (max-width: 900px) {
+    .analytics-volume { grid-template-columns: 1fr; }
+    .analytics-tiles { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 620px) {
+    .analytics-metric-grid { grid-template-columns: 1fr; }
+}
